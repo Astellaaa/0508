@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        #menu {
+            width: 260px;
+            float: right;
+        }
+        #section {
+            width: 700px;
+            float: left;
+        }
+        li {
+            list-style: none;
+        }
+        /* 스마트폰인 경우 */
+        @media screen and (max-width: 767px) {
+            body{
+                width: auto;
+            }
+            #menu{
+                width: auto;
+                float: none;
+            }
+            #section{
+                width: auto;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+        </ul>
+    </div>
+    <div id="section">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt id sint optio sequi a error, vel commodi reiciendis fuga laborum ea facilis blanditiis nesciunt quis pariatur. Architecto libero ratione aliquid.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nobis ipsum ratione architecto, amet sit aliquid distinctio a praesentium repudiandae sunt accusantium numquam error, minus dignissimos molestiae aliquam ut esse.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum provident earum et architecto rerum omnis ad natus magni. Aspernatur aliquam quidem delectus quia corporis amet qui ipsam sit veniam totam?
+        </p>
+    </div>
+</body>
+</html>
