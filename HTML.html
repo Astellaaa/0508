@@ -178,8 +178,16 @@
             color: #6C6C6C;
         }
     </style>
-    <script></script>
-    <script></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function (){
+            $('.outer-menu-item').hover(function (){
+                $(this).find('.inner-menu').show();
+            }, function (){
+                $(this).find('.inner-menu').hide();
+            });
+        });
+    </script>
 </head>
 
 <body>
